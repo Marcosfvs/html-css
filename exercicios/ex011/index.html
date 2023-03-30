@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmina</h1>
+    <p>Tente abrir esse site em vários dispositivos diferente ou simplismente aumente e diminua o tamanho do seu navegador</p>
+    <picture> <!--Atenção a ordem de dos source-->
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Audios HTML</h1><!--MP3, OGG, WAV-->
+    <h2>Primeira forma</h2>
+    <audio src="midia/warzone-anno-domini-beats.mp3" controls autoplay></audio>
+    <h2>Segunda Forma</h2>
+    <audio preload="auto" autoplay controls loop>
+        <source src="midia/warzone-anno-domini-beats.mp3" type="audio/mepg"> <!---Também serve para vídeos, testar depois-->
+    </audio>
+    <H1>Videos HTML</H1>
+    <video  src="midia/cerva.mp4" width="300" controls autoplay></video>
+    <h1>videos 2</h1>
+<video width="500" poster="imagens/foto-m.png" controls autoplay loop>
+    <source src="midia/cerva.mp4" type="video/mp4"><!--Colocar outros formatos-->
+    <p>seu navegador não tem compatibilidade com reprodução de vídeos</p>
+</video>
+<h1>Inserindo Video do Youtube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

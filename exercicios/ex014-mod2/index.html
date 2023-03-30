@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores em Css</title>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap'); /*Google fonts @import*/
+
+            @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Shadows+Into+Light&display=swap');
+
+        body {
+            font-family: 'Shadows Into Light';
+            font-size: 16px/*tamanho natural da fonte- 16px = 1 em*/;
+            font-weight: normal;
+            font-style: italic;
+               /*
+shorthand font
+- font-style -> font-weignt -> font-size -> font-family
+ex.: fonte: italic normal 16 px Arial, Helvetica, sans-serif;
+
+        Medidas Absolutas
+        cm, mm ,in (polegadas), px, pt, pc
+        
+        Medidas relativas ao tamanho da fonte padrão
+        em, ex, rem, vw, vh, %
+        (px e em,recomendadas para uso*/
+        }
+        h2{
+            font-family: 'Great Vibes', 'Arial Narrow', Arial, sans-serif;
+        } /*css web safe font combinations*/
+ /*weight (peso),height(largura), width(altura)*/
+    </style>
+</head>
+<body> <!--por nome de cores-->
+    <h2 style="background-color:blueviolet; color:honeydew;">Exemplo de cores</h2>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus illo quasi dolor velit, mollitia ipsam minima corporis magni laudantium suscipit corrupti itaque debitis. Dolorum deserunt neque inventore odio reiciendis explicabo?
+    <!--Representação hexadecimal: (min) 0 1 2 3 4 5 6 7 8 9 A B C D E F (max): R00G00B00-->
+    <h2 style="background-color: #00f; color: #fa0;">Exemplo de cores</h2>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus illo quasi dolor velit, mollitia ipsam minima corporis magni laudantium suscipit corrupti itaque debitis. Dolorum deserunt neque inventore odio reiciendis explicabo?
+    <h2 style="background-color:rgb(0, 0, 255); color: rgb(235, 154, 4);">Exemplo de cores</h2>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus illo quasi dolor velit, mollitia ipsam minima corporis magni laudantium suscipit corrupti itaque debitis. Dolorum deserunt neque inventore odio reiciendis explicabo?
+        <!--hsl hue saturation, luminosity-->
+    <h2 style="background-color: hsl(240, 100%, 50%); color: rgb(235, 154, 4);">Exemplo de cores</h2>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus illo quasi dolor velit, mollitia ipsam minima corporis magni laudantium suscipit corrupti itaque debitis. Dolorum deserunt neque inventore odio reiciendis explicabo?
+    
+    
+</body>
+</html>
